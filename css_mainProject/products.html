@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORA E-commerce Store</title>
+    <link rel="icon" href="images/NORA_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/products.css">
+    <meta name="author" content="feedback" />
+    <meta name="description" content="browse products">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">NORA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="contact.html#about-us">About us</a></li>
+            </ul>
+            <button class="btnlogin-popup">Login</button>
+            <!-- Popup Login Form -->
+        </nav>
+        <section class="wrapper">
+            <!-- Close Icon -->
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <!-- Login Form -->
+            <article class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <!-- Remember me and Forgot Password -->
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <!-- Login Button -->
+                    <button type="submit" class="btn">Login</button>
+                    <!-- Registration Link -->
+                    <div class="login-register">
+                        <p>Don't have an Account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </article>
+            <!-- Registration Form -->
+            <article class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <!-- Username Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="register-username" required>
+                        <label for="register-username">Username</label>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="register-togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">Password</label>
+                    </div>
+                    <!-- Terms and Conditions Checkbox -->
+                    <div class="remember-forgot">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox"> I agree to the Terms & Conditions.
+                        </label>
+                    </div>
+                    <!-- Registration Button -->
+                    <button type="submit" class="btn">Register</button>
+                    <!-- Login Link -->
+                    <div class="login-register">
+                        <p>Already have an Account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </header>
+
+    <section id="hero">
+        <img src="images/product_hero.png" alt="Cover Image Description">
+    </section>
+
+    <div id="advanced-search-container">
+        <input type="text" id="advanced-search-bar" placeholder="Search for products...">
+        <button type="submit" id="search-btn"><ion-icon name="search"></ion-icon> Search</button>
+        <div id="filters">
+            <select name="product-type" id="filter-product-type">
+                <option value="all">All Products</option>
+                <option value="electronics">Electronics</option>
+                <option value="apparel">Apparel</option>
+                <option value="accessories">Accessories</option>
+                <option value="home-decor">Home Decor</option>
+                <option value="toys">Toys</option>
+            </select>
+            
+          <select name="category" id="filter-category">
+            <option value="all">All Categories</option>
+            <option value="beauty">Beauty</option>
+            <option value="sunglasses">Sunglasses</option>
+            <option value="bags">Bags</option>
+            <option value="clothing">Clothing</option>
+            <option value="shoes">Shoes</option>
+            <option value="electronics">Electronics</option>
+          </select>
+          <select name="price" id="filter-price">
+            <option value="all">All Prices</option>
+            <option value="0-50">$0 - $50</option>
+            <option value="51-150">$51 - $150</option>
+            <option value="150+">$150+</option>
+            <option value="200+">$200+</option>
+            <option value="300+">$300+</option>
+            <option value="500+">$500+</option>
+          </select>
+          
+          <select name="material" id="filter-material">
+            <option value="all">All Materials</option>
+            <option value="cotton">Cotton</option>
+            <option value="leather">Leather</option>
+            <option value="polyester">Polyester</option>
+            <option value="silk">Silk</option>
+        </select>
+        <select name="size" id="filter-size">
+            <option value="all">All Sizes</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">XL</option>
+        </select>        
+        <select name="rating" id="filter-rating">
+            <option value="all">All Ratings</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+
+        </div>
+      </div>
+      
+
+
+    
+    <main>
+        <section id="product-catalog">
+            <div class="product-catalog-header">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="products-container">
+                <!-- Product Item 1: Smartwatch -->
+                <div class="product-item">
+                    <img src="images/product_item1.png" alt="Sleek Smartwatch">
+                    <div class="product-info">
+                        <h3>Sleek Smartwatch</h3>
+                        <p>Stay connected and track your fitness with our latest smartwatch. Features a 48-hour battery life and customizable watch faces.</p>
+                        <button class="btn view-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Product Item 3: Designer Lamp -->
+                <div class="product-item">
+                    <img src="images/product_item2.png" alt="Designer Lamp">
+                    <div class="product-info">
+                        <h3>Designer Lamp</h3>
+                        <p>Illuminate your space with this modern designer lamp. Perfect for creating a warm ambiance in any room.</p>
+                        <button class="btn view-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Product Item 4: Artisan Coffee Beans -->
+                <div class="product-item">
+                    <img src="images/product_item3.png" alt="Artisan Coffee Beans">
+                    <div class="product-info">
+                        <h3>Artisan Coffee Beans</h3>
+                        <p>Wake up to the aroma of our artisanal coffee beans, sourced from the finest estates for the perfect cup every morning.</p>
+                        <button class="btn view-details">View Details</button>
+                    </div>
+                </div>
+                <!-- Product Item 5: Organic Skincare Kit -->
+                <div class="product-item">
+                    <img src="images/product_item4.png" alt="Organic Skincare Kit">
+                    <div class="product-info">
+                        <h3>Organic Skincare Kit</h3>
+                        <p>Pamper your skin with our organic skincare kit. Includes a cleanser, toner, and moisturizer made with natural ingredients.</p>
+                        <button class="btn view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="limited-time-offers">
+            <h2>Limited Time Offers</h2>
+            <div class="offers-container">
+                <!-- Offer 1 -->
+                <div class="offer">
+                    <img src="images/Limited_img1.png" alt="Elegant Leather Wallet">
+                    <p>Exclusive offer: Get 30% off on our handcrafted leather wallets. Perfect for a sleek look!</p>
+                </div>
+                <!-- Offer 2 -->
+                <div class="offer">
+                    <img src="images/Limited_img2.png" alt="Luxury Handbag">
+                    <p>Exclusive 30% discount on our Luxury Handbag collection. Limited stock available!</p>
+                </div>
+                <!-- Offer 3 -->
+                <div class="offer">
+                    <img src="images/Limited_img3.png" alt="Luxury Skincare Bundle">
+                    <p>Indulge in self-care with our Luxury Skincare Bundle. Enjoy a special 40% discount this week!</p>
+                </div>
+                <!-- Offer 4 -->
+                <div class="offer">
+                    <img src="images/Limited_img4.png" alt="Compact Camping Tent">
+                    <p>Ready for an adventure? Get our Compact Camping Tent at a special 25% discount!</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="featured-blog-posts">
+            <h2>From Our Blog</h2>
+            <div class="blog-posts-container">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <img src="images/product_blog1.png" alt="The Ultimate Guide to Outdoor Adventure">
+                    <h3>The Ultimate Guide to Outdoor Adventure</h3>
+                    <p>Explore tips and gear recommendations for your next outdoor excursion.</p>
+                    <a href="path/to/blog-post1">Read More</a>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <img src="images/product_blog2.png" alt="5 Must-Have Smart Home Gadgets">
+                    <h3>5 Must-Have Smart Home Gadgets</h3>
+                    <p>Discover the latest in home automation and how it can transform your living space.</p>
+                    <a href="path/to/blog-post2">Read More</a>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="blog-post">
+                    <img src="images/product_blog3.png" alt="Mastering the Art of French Cooking">
+                    <h3>Mastering the Art of French Cooking</h3>
+                    <p>Join us as we dive into classic French recipes and cooking techniques.</p>
+                    <a href="path/to/blog-post3">Read More</a>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="blog-post">
+                    <img src="images/product_blog4.png" alt="Sustainable Fashion: A New Era">
+                    <h3>Sustainable Fashion: A New Era</h3>
+                    <p>Learn about sustainable fashion and how it's shaping the future of the industry.</p>
+                    <a href="path/to/blog-post4">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+          
+        
+
+
+        
+        
+    
+    </main>
+
+    <footer>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>👑NORA👑</p>
+            <p>PUNJAB</p>
+            <ul>
+                <li><a id="call" href="button"><ion-icon name="call-sharp"></ion-icon>  +1 (437) 434-0073</a></li>
+                <li><a href="mailto:barkiratbrar88@gmail.com" target="_main"><ion-icon name="mail"></ion-icon>   barkiratbrar88@gmail.com</a></li>
+                <li><a href="https://goo.gl/maps/BrzzPtt9284aG3C28" target="_main"><ion-icon name="location-sharp"></ion-icon>425 Bloor Street East, Toronto, ON, CA</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/noraecommerce" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/noraecommerce" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/noraecommerce" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <!-- Newsletter form -->
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="compLinks">
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p> 2023 &copy; NORA | Barkirat Brar 200554052 🤍</p>
+        </div>
+    </footer>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+    <script src="js/script.js"></script> 
+</body>
+</html>

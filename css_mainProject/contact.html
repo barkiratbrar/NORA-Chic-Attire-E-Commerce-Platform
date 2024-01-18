@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORA E-commerce Store</title>
+    <link rel="icon" href="images/NORA_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contact.css">
+    <meta name="author" content="feedback" />
+    <meta name="description" content="browse products">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+</head>
+    
+<body>
+    <header>
+        <div id="logo">NORA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+            <button class="btnlogin-popup">Login</button>
+            <!-- Popup Login Form -->
+        </nav>
+        <section class="wrapper">
+            <!-- Close Icon -->
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <!-- Login Form -->
+            <article class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <!-- Remember me and Forgot Password -->
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <!-- Login Button -->
+                    <button type="submit" class="btn">Login</button>
+                    <!-- Registration Link -->
+                    <div class="login-register">
+                        <p>Don't have an Account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </article>
+            <!-- Registration Form -->
+            <article class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <!-- Username Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="register-username" required>
+                        <label for="register-username">Username</label>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="register-togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">Password</label>
+                    </div>
+                    <!-- Terms and Conditions Checkbox -->
+                    <div class="remember-forgot">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox"> I agree to the Terms & Conditions.
+                        </label>
+                    </div>
+                    <!-- Registration Button -->
+                    <button type="submit" class="btn">Register</button>
+                    <!-- Login Link -->
+                    <div class="login-register">
+                        <p>Already have an Account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-contact">
+            <img src="images/contact_hero.png" alt="Customer Care Image" id="hero-image">
+            <div class="hero-content">
+                <h1>Welcome to NORA Customer Care</h1>
+                <p>Your satisfaction is our priority. How can we assist you today?</p>
+                <div class="hero-additional-content">
+                    <h2>Here to Help</h2>
+                    <p>Whether you have questions about our products, need assistance with an order, or just want to give feedback, we're here for you.</p>
+                    <div class="contact-options">
+                        <p><strong>Chat Live:</strong> Get real-time assistance.</p>
+                        <p><strong>Email Us:</strong> Drop us a message and we'll get back to you.</p>
+                        <p><strong>Call Us:</strong> Speak directly with our customer care team.</p>
+                    </div>
+                    <a href="#contact-info" class="btn-hero ">Contact Us</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Our team is ready to help! Reach out to us through any of the channels below, or fill out the contact form for a prompt response.</p>
+            
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:barkiratbrar88@gmail.com">barkiratbrar88@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Student ID:</h3>
+                    <p>200554052</p>
+                    <p>Barkirat Singh  Brar</p>
+
+                </div>
+                <div>
+                    <h3>Visit Us</h3>
+                    <p>425 Bloor Street East, Toronto, ON, Canada</p>
+                </div>
+            </div>
+        
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get In Touch</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-hero">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <section id="customer-care">
+            <h2>Customer Care Services</h2>
+            <div class="services-container">
+                <!-- Service 1: 24/7 Support -->
+                <div class="service-item">
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is here to assist you at any time, day or night, to ensure your experience is seamless.</p>
+                </div>
+                
+                <!-- Service 2: Personalized Assistance -->
+                <div class="service-item">
+                    <h3>Personalized Assistance</h3>
+                    <p>Get tailored support for all your inquiries, ensuring a personalized shopping experience.</p>
+                </div>
+        
+                <!-- Service 3: Product Advice -->
+                <div class="service-item">
+                    <h3>Product Advice</h3>
+                    <p>Need help choosing the right product? Our experts are here to guide you with professional advice.</p>
+                </div>
+        
+                <!-- Service 4: Order Tracking -->
+                <div class="service-item">
+                    <h3>Order Tracking</h3>
+                    <p>Stay updated with your order status from purchase to delivery with our real-time tracking system.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="accordion">What is your return policy?</button>
+                    <div class="panel">
+                        <p>Our return policy allows you to return products within 30 days of purchase for a full refund or exchange.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="accordion">How long does shipping take?</button>
+                    <div class="panel">
+                        <p>Standard shipping takes 3-5 business days, while express shipping is available for faster delivery within 1-2 business days.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="accordion">Do your products come with a warranty?</button>
+                    <div class="panel">
+                        <p>Yes, all our products come with a one-year warranty covering manufacturing defects.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="accordion">What payment methods do you accept?</button>
+                    <div class="panel">
+                        <p>We accept various payment methods including credit cards, PayPal, and Apple Pay.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="accordion">How can I track my order?</button>
+                    <div class="panel">
+                        <p>Once your order is shipped, we'll send you a tracking number via email to track your package in real time.</p>
+                    </div>
+                </div>
+        
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="accordion">How can I contact customer support?</button>
+                    <div class="panel">
+                        <p>Our customer support team is available 24/7 via email, phone, or live chat on our website.</p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="about-us">
+            <h2>About NORA</h2>
+            <p>Discover the story behind NORA, a brand dedicated to revolutionizing the e-commerce experience with an emphasis on quality and customer satisfaction.</p>
+            
+            <div class="about-content">
+                <!-- Company Origin -->
+                <div class="about-item">
+                    <h3>Our Origin</h3>
+                    <p>Founded in [Year], NORA began as a small startup with a vision to bring innovative products to the market. Our journey started in [Location], fueled by a passion for excellence and a commitment to customer service.</p>
+                </div>
+
+                <!-- The Creator -->
+                <div class="about-item">
+                    <h3>Barkirat Brar</h3>
+                    <p>Efforts by Barkirat Singh Brar, I created an Ecommerce Website on the Company Brand Name NORA, hope you might like this. Thankyou, it was really an honour to be your student.</p>
+                </div>
+        
+                <!-- Core Values -->
+                <div class="about-item">
+                    <h3>Our Values</h3>
+                    <p>Integrity, innovation, and customer-centricity are at the core of everything we do. These values guide our decisions and shape our approach to service, ensuring we maintain the trust and loyalty of our customers.</p>
+                </div>
+        
+                <!-- Commitment to Quality -->
+                <div class="about-item">
+                    <h3>Quality Commitment</h3>
+                    <p>Quality is not just a word for us; it's a promise. From product selection to after-sales support, we ensure every aspect of our operation meets the highest standards.</p>
+                </div>
+        
+                <!-- Our Team -->
+                <div class="about-item">
+                    <h3>Our Team</h3>
+                    <p>Our team comprises dedicated professionals who share a common goal - to deliver the best to our customers. Their expertise and commitment drive our success and innovation.</p>
+                </div>
+        
+                <!-- Our Mission -->
+                <div class="about-item">
+                    <h3>Our Mission</h3>
+                    <p>At NORA, our mission is to offer an unparalleled shopping experience by providing top-quality products and exceptional customer service. We strive to exceed expectations and continually improve our offerings.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>👑NORA👑</p>
+            <p>Brampton</p>
+            <ul>
+                <li><a id="call" href="button"><ion-icon name="call-sharp"></ion-icon>  +1 (437) 434-0073</a></li>
+                <li><a href="mailto:barkiratbrar88@gmail.com" target="_main"><ion-icon name="mail"></ion-icon>   barkiratbrar88@gmail.com</a></li>
+                <li><a href="https://goo.gl/maps/BrzzPtt9284aG3C28" target="_main"><ion-icon name="location-sharp"></ion-icon>425 Bloor Street East, Toronto, ON, CA</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/noraecommerce" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/noraecommerce" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/noraecommerce" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <!-- Newsletter form -->
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="compLinks">
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p> 2023 &copy; NORA | Barkirat Brar 200554052 🤍</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.accordion').forEach(button => {
+    button.addEventListener('click', () => {
+        const panel = button.nextElementSibling;
+
+        button.classList.toggle('active');
+        if (panel.style.display === 'block') {
+            panel.style.display = 'none';
+        } else {
+            panel.style.display = 'block';
+        }
+    });
+});
+
+    </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js"></script>
+    <!-- Add link to your JavaScript file -->
+    
+</body>
+</html>

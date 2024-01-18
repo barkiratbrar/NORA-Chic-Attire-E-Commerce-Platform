@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORA E-commerce Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="browse products">
+    <link rel="icon" href="images/NORA_favicon.png" type="image/x-icon">
+    <meta name="author" content="feedback" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <div id="logo">NORA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="contact.html#about-us">About us</a></li>
+            </ul>
+            <button class="btnlogin-popup">Login</button>
+            <!-- Popup Login Form -->
+        </nav>
+        <section class="wrapper">
+            <!-- Close Icon -->
+            <span class="icon-close">
+                <ion-icon name="close-outline"></ion-icon>
+            </span>
+            <!-- Login Form -->
+            <article class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <!-- Remember me and Forgot Password -->
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" id="remember"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <!-- Login Button -->
+                    <button type="submit" class="btn">Login</button>
+                    <!-- Registration Link -->
+                    <div class="login-register">
+                        <p>Don't have an Account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </article>
+            <!-- Registration Form -->
+            <article class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <!-- Username Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="register-username" required>
+                        <label for="register-username">Username</label>
+                    </div>
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="mail" required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-box">
+                        <span class="icon">
+                            <span class="password-toggle">
+                                <ion-icon name="eye" id="register-togglePasswordVisibility"></ion-icon>
+                            </span>
+                        </span>
+                        <input type="password" id="register-password" required>
+                        <label for="register-password">Password</label>
+                    </div>
+                    <!-- Terms and Conditions Checkbox -->
+                    <div class="remember-forgot">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox"> I agree to the Terms & Conditions.
+                        </label>
+                    </div>
+                    <!-- Registration Button -->
+                    <button type="submit" class="btn">Register</button>
+                    <!-- Login Link -->
+                    <div class="login-register">
+                        <p>Already have an Account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </header>
+    
+    <section id="hero">
+        <div class="image-slider">
+            <div class="slide active">
+                <img src="images/Hero_slider1.png" alt="First Image">
+            </div>
+            <div class="slide">
+                <img src="images/Hero_slider2.png" alt="Second Image">
+            </div>
+            <div class="slide">
+                <img src="images/Hero_slider3.png" alt="Third Image">
+            </div>
+            <div class="slide">
+                <img src="images/Hero_slider4.png" alt="Fourth Image">
+            </div>
+            <div class="slide">
+                <img src="images/Hero_slider5.png" alt="Fifth Image">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+    
+
+    <section id="categories">
+        <div class="category-header">
+            <h2>Our Categories</h2>
+            <button class="more-btn">More...</button>
+        </div>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="images/Category_img1.png" alt="Beauty & Grooming">
+                <h3>Beauty & Grooming</h3>
+                <p>Enhance your beauty routine with our curated selection of beauty and grooming products, from skincare essentials to makeup must-haves.</p>
+            </div>
+            <div class="category-item">
+                <img src="images/Category_img2.png" alt="Sunglasses">
+                <h3>Sunglasses</h3>
+                <p>Shade in style with our range of sunglasses. Find the perfect pair to suit your face shape and style from our trendy selection.</p>
+            </div>
+            <div class="category-item">
+                <img src="images/Category_img3.png" alt="Handbags & Purses">
+                <h3>Handbags & Purses</h3>
+                <p>Discover our exclusive collection of handbags and purses, designed for every occasion. From elegant clutches to practical totes, find your perfect match.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="latest-arrivals">
+        <div class="latest-arrivals-header">
+            <h2>Our Latest Arrivals</h2>
+            <button class="view-all-btn">View All</button>
+        </div>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/Arrival_toteBag.png" alt="Product 1">
+                <h3>Tote Bag</h3>
+                <p>Elevate your everyday style with this spacious and sophisticated leather tote. Perfect for work or weekend, crafted for durability and elegance.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Arrival_jacket.png" alt="Product 2">
+                <h3>Denim Jacket</h3>
+                <p>Get that timeless look with our vintage-inspired denim jacket. Its classic cut and premium material make it a versatile and stylish addition to any wardrobe.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Arrival_glasses.png" alt="Product 3">
+                <h3>Sunglasses</h3>
+                <p>Step into the sun with style and sustainability. Our bamboo sunglasses offer a chic design with the added benefit of being environmentally friendly.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-picks">
+        <div class="top-picks-header">
+            <h2>Top Picks</h2>
+            <button class="view-all-btn">View All</button>
+        </div>
+        <div class="products-container">
+            <div class="product-item">
+                <img src="images/Top_scarf.png" alt="Elegant Silk Scarf">
+                <h3>NORA Silk Scarf</h3>
+                <p>Discover the luxury of silk with our elegant scarves, perfect for adding a touch of sophistication to any outfit.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Top_necklace.png" alt="Elegant Silk Scarf">
+                <h3>Artisanal Necklace</h3>
+                <p>A statement piece that combines traditional craftsmanship with modern design. This necklace is perfect for adding a touch of elegance to both day and evening wear.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="product-item">
+                <img src="images/Top_skinset.png" alt="Elegant Silk Scarf">
+                <h3>NORA Skincare Set</h3>
+                <p>Indulge in our luxury skincare set, featuring natural ingredients for radiant, youthful skin. A complete regimen for your daily skincare needs.</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="discover">
+        <div class="discover-header">
+            <h2>Discover NORA</h2>
+        </div>
+        <div class="discover-container" id="discoverCarousel">
+            <!-- Scroller Item 1 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel1.png" alt="Discovery Item 1">
+            </div>
+            <!-- Scroller Item 2 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel2.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 3 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel3.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 4 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousal4.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 5 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel5.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 6 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel6.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 6 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel7.png" alt="Discovery Item 2">
+            </div>
+            <!-- Scroller Item 6 -->
+            <div class="discover-item">
+                <img src="images/Discover_carousel8.png" alt="Discovery Item 2">
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>👑NORA👑</p>
+            <p>Brampton</p>
+            <ul>
+                <li><a id="call" href="button"><ion-icon name="call-sharp"></ion-icon>  +1 (437) 434-0073</a></li>
+                <li><a href="mailto:barkiratbrar88@gmail.com" target="_main"><ion-icon name="mail"></ion-icon>   barkiratbrar88@gmail.com</a></li>
+                <li><a href="https://goo.gl/maps/BrzzPtt9284aG3C28" target="_main"><ion-icon name="location-sharp"></ion-icon>425 Bloor Street East, Toronto, ON, CA</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/noraecommerce" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/noraecommerce" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/noraecommerce" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <!-- Newsletter form -->
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="compLinks">
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p> 2023 &copy; NORA | Barkirat Brar 200554052 🤍</p>
+        </div>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/script.js"></script>
+    <!-- Add link to your JavaScript file -->
+    
+</body>
+
+</html>
